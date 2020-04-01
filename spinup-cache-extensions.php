@@ -62,8 +62,9 @@ add_action('admin_notices', 'spinup_cache_ext_custom_admin_notice');
 
 // Check if purge cache button has been pushed
 function check_purge_cache_button() {
-	if( isset($_POST['submit']) && check_admin_referer('purge_site_button') ) {
-		if($_POST['submit'] === 'Purge Site Cache') {
+	global $pagenow;
+	if ( $pagenow == 'options-general.php' && $_GET['page'] == 'spinup_cache_ext' ) {
+		if( $_POST['submit'] === 'Purge Site Cache' && check_admin_referer('purge_site_button') ) {
 			return true;
 		}
 	}
