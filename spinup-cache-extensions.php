@@ -68,8 +68,3 @@ function check_purge_cache_button() {
 		}
 	}
 }
-?>
-
-
-
-
