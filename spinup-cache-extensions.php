@@ -3,7 +3,7 @@
 Plugin Name: Spinup Cache Extensions
 Plugin URI: https://delineator.media
 Description: Extends user's control of the cache with SpinupWP.
-Version: 0.1
+Version: 0.1.1
 Author: Delineator
 Author URI: https://delineator.media
 License: GPLv2 or later
